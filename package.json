@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "mock": "json-server --watch db.json --port 3000"
   },
   "keywords": [
     "vue",
@@ -25,6 +26,7 @@
     "css-loader": "^5.0.1",
     "css-minimizer-webpack-plugin": "^1.1.5",
     "html-webpack-plugin": "^5.0.0-alpha.7",
+    "json-server": "^0.16.2",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
@@ -45,14 +47,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChinaMrAlvin/webpack5-start.git"
+    "url": ""
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "echarts": "^4.9.0",
+    "element-ui": "^2.14.0",
+    "faker": "^5.1.0",
+    "file-loader": "^6.2.0",
     "less": "^3.12.2",
     "less-loader": "^7.0.2",
     "lodash": "^4.17.20",
     "path": "^0.12.7",
+    "source-map-loader": "^1.1.2",
+    "url-loader": "^4.1.1",
     "vue-class-component": "^7.2.6",
     "vue-router": "^3.4.9"
   }

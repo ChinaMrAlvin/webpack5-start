@@ -1,30 +1,17 @@
 <template>
   <div class="hello">
-    <router-link to="./charts">hello JsonServer</router-link>
+    charts module
    <el-table
       v-loading="loading"
       :data="tableData"
       style="width: 100%">
       <el-table-column
-        prop="avatar"
-        label="头像"
-       >
-        <template slot-scope="scope">
-          <img :src="scope.row.avatar" alt="">
-        </template>
+        prop="time"
+        label="时间">
       </el-table-column>
       <el-table-column
-        prop="name"
-        label="姓名"
-       >
-      </el-table-column>
-      <el-table-column
-        prop="email"
-        label="地址">
-      </el-table-column>
-      <el-table-column
-        prop="phone"
-        label="tel">
+        prop="value"
+        label="值">
       </el-table-column>
     </el-table>
   </div>
@@ -34,12 +21,12 @@
 import { Vue, Component } from 'vue-property-decorator'
 import axios from 'axios';
 
-import HelloDataType from './type';
+import ChartType from './type';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class Charts extends Vue {
   loading: boolean = true;
-  tableData: HelloDataType[] = []
+  tableData: ChartType[] = []
 
   async created() {
     const {data} = await this.sendRequest();
@@ -48,7 +35,7 @@ export default class HelloWorld extends Vue {
   }
 
   async sendRequest() {
-    return await axios.get("/api/people") as any;
+    return await axios.get("/api/charts") as any;
   }
 }
 </script>

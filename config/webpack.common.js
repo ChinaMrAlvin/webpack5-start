@@ -1,9 +1,11 @@
 const paths = require('./paths')
 const isDevelop = process.env.NODE_ENV === 'development'
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -102,7 +104,7 @@ module.exports = {
 
   resolve:{
     //引入路径是不用写对应的后缀名
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.ts'],
     alias:{
         //正在使用的是vue的运行时版本，而此版本中的编译器时不可用的，我们需要把它切换成运行时 + 编译的版本
         'vue$':'vue/dist/vue.esm.js',

@@ -28,25 +28,14 @@ You can view the development server at `localhost:8080`.
 npm run build
 ```
 
-> Note: Install [http-server](https://www.npmjs.com/package/http-server) globally to deploy a simple server.
-
-```bash
-npm i -g http-server
-```
-
-You can view the deploy by creating a server in `dist`.
-
-```bash
-cd dist && http-server
-```
-
 ## Features
 
 - [webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
-
+- [JsonServer]
+- [Faker]
 ## Dependencies
 
 ### webpack
@@ -56,6 +45,16 @@ cd dist && http-server
 - [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Development server for webpack
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify development/production configuration
 - [`cross-env`](https://github.com/kentcdodds/cross-env) - Cross platform configuration
+
+### Element-UI
+
+### Echarts
+
+### Lodash
+
+### JsonServer
+
+### Faker
 
 ### Babel
 
