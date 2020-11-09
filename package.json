@@ -1,0 +1,59 @@
+{
+  "name": "webpack5_vue_typescript_start",
+  "version": "1.0.0",
+  "description": "webpack5 vue starter",
+  "main": "index.js",
+  "author": "alvin",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+  },
+  "keywords": [
+    "vue",
+    "webpack 5",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "html-webpack-plugin": "^5.0.0-alpha.7",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.10",
+    "typescript": "^4.0.5",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.5",
+    "vue-property-decorator": "^9.0.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChinaMrAlvin/webpack5-start.git"
+  },
+  "dependencies": {
+    "echarts": "^4.9.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "lodash": "^4.17.20",
+    "path": "^0.12.7",
+    "vue-class-component": "^7.2.6",
+    "vue-router": "^3.4.9"
+  }
+}
